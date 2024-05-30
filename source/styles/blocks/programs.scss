@@ -1,23 +1,27 @@
-.programs {
-  //comments
-}
-
 .programs__wrapper {
-  //comments
+  @media (min-width: $tablet) {
+    margin-bottom: clamp(40px, 4.5rem, 55px);
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: clamp(68px, 7.2rem, 80px);
+  }
 }
 
 .programs__list {
   @include list-reset;
   display: grid;
-  gap: 20px;
+  gap: min(2rem, 30px);
+  padding: min(2rem, 30px) 0;
 
   @media (min-width: $tablet) {
-    gap: 20px;
+    padding: 0;
+    gap: clamp(25px, 3rem, 40px);
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    gap: clamp(70px, 8rem, 90px);
   }
 }
 

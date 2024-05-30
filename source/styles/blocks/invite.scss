@@ -1,29 +1,78 @@
 .invite {
-  //comments
-}
+  position: relative;
 
-.invite--secondary {
-  background-color: $color-secondary;
+  &--secondary {
+    background-color: $color-secondary;
+  }
 }
 
 .invite__wrapper {
+  padding: min(2.7rem, 40px) 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding: min(6.1rem, 70px) min(4rem, 46px);
+    gap: 0;
+  }
+
   @media (min-width: $desktop) {
-    width: 565px;
+    position: absolute;
+    padding: clamp(58px, 6.1rem, 81px) clamp(69px, 7.5rem, 95px) clamp(56px, 6rem, 78px) clamp(78px, 8rem, 107px);
+    width: clamp(530px, 56.5rem, 1000px);
+    top: 95px;
+    align-items: start;
+    gap: 10px;
+    background-color: #ffffff;
+    z-index: 1;
   }
 }
 
 .invite__headline {
   margin: 0;
-  font-size: 16px;
-  line-height: 20px;
+  max-width: min(13rem, 170px);
+  font-size: min(1.6rem, 20px);
+  line-height: min(2rem, 25px);
+  font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: clamp(165px, 16.5rem, 185px);
+    font-size: clamp(18px, 2rem, 27px);
+    line-height: clamp(24px, 2.6rem, 35px);
+  }
+
+  @media (min-width: $desktop) {
+    font-size: clamp(18px, 2rem, 27px);
+    line-height: clamp(24px, 2.6rem, 35px);
+  }
 }
 
 .invite__address {
+  max-width: min(14rem, 195px);
   font-family: $font-secondary;
-  line-height: 20px;
+  font-size: min(1.4rem, 18px);
+  line-height: min(2rem, 26px);
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    max-width: max(160px, 16rem);
+    display: grid;
+    gap: 2rem;
+    text-align: right;
+    font-size: clamp(14px, 1.6rem, 22px);
+    line-height: clamp(18px, 2rem, 27px);
+  }
+
+  @media (min-width: $desktop) {
+    gap: max(1.8rem, 18px);
+    text-align: left;
+    font-size: clamp(16px, 1.6rem, 22px);
+    line-height: clamp(20px, 2rem, 27px);
+  }
 }
 
 .invite__text {
@@ -31,5 +80,31 @@
 }
 
 .invite__map {
-  //comments
+  display: block;
+  width: 100%;
+  height: 362px;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+
+  &--nojs {
+    display: none;
+  }
+}
+
+.invite__map-image {
+  display: none;
+  width: 100%;
+  height: 362px;
+  object-fit: cover;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }

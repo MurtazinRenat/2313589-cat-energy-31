@@ -2,22 +2,51 @@
   display: grid;
   place-content: center;
   margin: 0;
-  padding: 10px 44px; //7px 44px;?
+  padding: 10px 44px;
   border: none;
   font-family: $font-primary;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: min(1.6rem, 22px);
+  line-height: min(2rem, 28px);
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-}
+  cursor: pointer;
 
-.button--primary {
-  color: #ffffff;
-  background-color: $color-primary;
-}
+  @media (min-width: $tablet) {
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
+  }
 
-.button--secondary {
-  color: $text-secondary;
-  background-color: #f2f2f2;
+  @media (min-width: $desktop) {
+    font-size: clamp(18px, 2rem, 24px);
+    line-height: clamp(18px, 2rem, 24px);
+  }
+
+  &--primary {
+    color: #ffffff;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-slider;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $color-slider;
+    }
+  }
+
+  &--secondary {
+    color: $text-secondary;
+    background-color: $color-secondary;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+      background-color: $color-card;
+    }
+  }
 }
