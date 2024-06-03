@@ -3,28 +3,29 @@
 }
 
 .footer__wrapper {
-  padding: min(3.9rem, 50px) 0;
+  padding: 39px 0;
   display: grid;
-  gap: min(1rem, 15px);
+  gap: 10px;
 
   @media (min-width: $tablet) {
-    padding: min(5.5rem, 70px) 0;
+    padding: 55px 0;
     grid-auto-flow: row dense;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
   }
 
   @media (min-width: $desktop) {
-    padding: clamp(62px, 6.7rem, 80px) 0;
+    padding: 67px 0;
+    width: 1220px;
   }
 }
 
 .footer__logo {
-  padding-bottom: min(1.7rem, 25px);
+  padding-bottom: 17px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
-    padding: min(0.5rem, 10px) 0;
+    padding: 5px 0;
     border: none;
     justify-self: start;
     grid-column: 1 / 2;
@@ -33,13 +34,13 @@
 
 .footer__social {
   margin-bottom: 10px;
-  padding: min(1.1rem, 18px) 0 min(1.8rem, 28px);
+  padding: 11px 0 18px;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet) {
     margin: 0;
-    padding: clamp(7px, 0.7rem, 12px) 0;
-    max-width: max(180px, 18rem);
+    padding: 7px 0;
+    max-width: 180px;
     justify-self: space-between;
     grid-column: 2 / 3;
     border: none;

@@ -13,23 +13,19 @@
     z-index: -1;
 
     @media (min-width: $tablet) {
-      width: calc(100% + 140px);
+      width: calc(100% + 60px);
       top: min(1.9rem, 25px);
     }
 
     @media (min-width: $desktop) {
-      width: calc(100% + 140px);
-    }
-
-    @media (min-width: 1280px) {
-      width: calc(100% + 220px);
+      width: calc(100% + 160px);
     }
   }
 
   &--short::after {
     @media (min-width: $tablet) {
-      width: calc(100% + 60px);
-      top: min(1.9em, 25px);
+      //width: calc(100% + 60px);
+      top: min(1.5em, 25px);
     }
   }
 }

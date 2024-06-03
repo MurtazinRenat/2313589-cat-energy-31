@@ -6,12 +6,7 @@
     width: calc(100% - 60px);
   }
 
-  @media (min-width: 1280px) {
-    width: calc(100% - 220px);
-    max-width: 2145px;
-  }
-
   @media (min-width: $desktop) {
-    width: calc(100% - 140px);
+    width: calc(100% - 80px);
   }
 }

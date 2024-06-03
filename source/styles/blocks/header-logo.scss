@@ -2,21 +2,21 @@
   text-decoration: none;
 
   @media (max-width: $mobile) {
-    width: min(3.3rem, 43px);
-    height: min(3.8rem, 50px);
+    width: 33px;
+    height: 38px;
   }
 
   @media (min-width: $tablet) {
-    width: clamp(160px, 17.4rem, 240px);
-    height: clamp(50px, 5rem, 62px);
+    width: 174px;
+    height: 50px;
     display: flex;
     align-items: center;
-    gap: clamp(13px, 1.3rem, 32px);
+    gap: 13px;
   }
 
   @media (min-width: $desktop) {
-    min-width: clamp(202px, 20.2rem, 240px);
-    height: clamp(59px, 5.9rem, 75px);
+    min-width: 202px;
+    height: 59px;
   }
 
   &:hover {
@@ -33,21 +33,21 @@
 }
 
 .header-logo__image {
-  width: 100%;
+  width: 35px;
   height: auto;
   object-fit: contain;
 
   @media (min-width: $tablet) {
-    width: clamp(60px, 6rem, 75px);
+    width: 60px;
   }
 
   @media (min-width: $desktop) {
-    width: clamp(70px, 7rem, 85px);
+    width: 70px;
   }
 }
 
 .header-logo__text {
-  width: clamp(101px, 10.1rem, 126px);
+  width: 101px;
   height: auto;
 
   @media (max-width: $mobile) {
@@ -63,6 +63,6 @@
   }
 
   @media (min-width: $desktop) {
-    width: clamp(112px, 11.8rem, 150px);
+    width: 118px;
   }
 }

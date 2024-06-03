@@ -1,5 +1,6 @@
 .navigation {
   position: relative;
+  z-index: 2;
 
   @media (min-width: $tablet) {
     padding-top: 25px;
@@ -9,7 +10,9 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: clamp(46px, 5.5rem, 55px);
+    width: 1280px;
+    padding-top: 55px;
+    padding-left: 30px;
   }
 }
 
@@ -43,8 +46,8 @@
 
 .navigation__toggle {
   padding: 0;
-  width: min(2.4rem, 30px);
-  height: min(2.4rem, 30px);
+  width: 24px;
+  height: 24px;
   background-image: url("../../icons/stack.svg#mobile_hamburger-button-mobile");
   background-color: transparent;
   background-size: contain;
@@ -58,7 +61,7 @@
 
   &--closed {
     background-image: url("../../icons/stack.svg#mobile_close-button-mobile");
-    background-size: min(1.8rem, 30px) min(1.8rem, 30px);
+    background-size: contain;
     background-position: center;
   }
 
@@ -78,10 +81,10 @@
   }
 
   @media (min-width: $tablet) {
-    max-width: max(45rem, 450px);
+    max-width: 450px;
   }
 
   @media (min-width: $desktop) {
-    max-width: max(52.9rem, 400px);
+    max-width: 550px;
   }
 }

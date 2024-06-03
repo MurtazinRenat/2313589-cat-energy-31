@@ -4,7 +4,7 @@
 }
 
 .extras__item {
-  padding: min(1.3rem, 20px) 0 min(1.8rem, 28px);
+  padding: 13px 0 18px;
   border-top: 1px solid #cdcdcd;
   display: grid;
 
@@ -13,54 +13,54 @@
   }
 
   @media (min-width: $tablet) {
-    padding: min(2.6rem, 32px) min(3.8rem, 48px) min(2.8rem, 35px);
+    padding: 26px 38px 28px;
     grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop) {
     align-items: center;
-    padding: clamp(14px, 1.4rem, 18px) 0 clamp(17px, 1.7rem, 22px);
-    grid-template-columns: min(32.5rem, 662px) min(32.6rem, 664px) auto;
+    padding: 14px 0 17px;
+    grid-template-columns: 325px 326px auto;
   }
 }
 
 .extras__caption {
   margin: 0;
-  margin-bottom: min(1.2rem, 18px);
-  font-size: min(1.6rem, 20px);
-  line-height: min(1.6rem, 20px);
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
     margin: 0;
     grid-column: 1 / 2;
-    font-size: clamp(18px, 2rem, 24px);
-    line-height: clamp(18px, 2rem, 24px);
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop) {
-    font-size: clamp(18px, 2rem, 24px);
-    line-height: clamp(18px, 2rem, 24px);
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .extras__features {
   margin: 0;
-  margin-bottom: min(1.5rem, 22px);
+  margin-bottom: 15px;
   display: flex;
   gap: 5px;
   justify-content: space-between;
   font-family: $font-secondary;
-  font-size: min(1.4rem, 18px);
-  line-height: min(1.4rem, 18px);
+  font-size: 14px;
+  line-height: 14px;
   color: $text-secondary;
 
   @media (min-width: $tablet) {
     margin: 0;
     text-align: end;
-    font-size: clamp(16px, 1.6rem, 20px);
-    line-height: clamp(20px, 2rem, 26px);
+    font-size: 16px;
+    line-height: 20px;
     display: grid;
     grid-column: 2 / -1;
     grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
@@ -68,7 +68,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: min(0.7rem, 7px);
+    padding-top: 7px;
     text-align: left;
     grid-column: 2 / 3;
     grid-template-columns: calc(202 * 100% / 287) calc(74 * 100% / 287);
@@ -85,13 +85,13 @@
 }
 
 .extras__link {
-  padding: min(1rem, 18px);
+  padding: 10px;
 
   @media (min-width: $tablet) {
-    margin-top: min(2.4rem, 32px);
-    padding: clamp(12px, 1.2rem, 18px);
-    font-size: clamp(16px, 1.6rem, 24px);
-    line-height: clamp(16px, 1.6rem, 24px);
+    margin-top: 24px;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 16px;
     grid-column: 1 / -1;
   }
 

@@ -1,13 +1,13 @@
 .subscribe {
-  padding: min(2.4rem, 40px) 0 min(3.5rem, 55px);
+  padding: 24px 0 35px;
 
   @media (min-width: $tablet) {
     padding: 0;
-    padding-bottom: min(7.4rem, 74px);
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: clamp(76px, 8.6rem, 86px);
+    padding-bottom: 86px;
   }
 }
 
@@ -24,47 +24,47 @@
   margin: 0;
   max-width: fit-content;
   margin-left: -20px;
-  margin-bottom: min(3.6rem, 40px);
+  margin-bottom: 36px;
   padding: 0 20px;
-  font-size: min(2.4rem, 28px);
-  line-height: min(2.4rem, 28px);
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 400;
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
     margin-left: 0;
-    margin-bottom: min(7.9rem, 79px);
+    margin-bottom: 79px;
     padding: 0 40px;
-    font-size: clamp(32px, 3.6rem, 40px);
-    line-height: clamp(32px, 3.6rem, 40px);
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop) {
     margin-left: -40px;
-    margin-bottom: clamp(70px, 7.9rem, 79px);
-    font-size: clamp(32px, 3.6rem, 40px);
-    line-height: clamp(32px, 3.6rem, 40px);
+    margin-bottom: 79px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .subscribe__description {
   margin: 0;
-  margin-bottom: min(1.2rem, 18px);
-  font-size: min(1.6rem, 24px);
-  line-height: min(2rem, 30px);
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
     margin: 0;
-    font-size: min(2.4rem, 34px);
-    line-height: min(3.7rem, 52px);
+    font-size: 24px;
+    line-height: 37px;
   }
 
   @media (min-width: $desktop) {
-    font-size: min(2.4rem, 34px);
-    line-height: min(3.7rem, 52px);
+    font-size: 24px;
+    line-height: 37px;
   }
 }
 
@@ -96,7 +96,7 @@
   min-width: 280px;
   max-width: 496px;
   font-family: $font-primary;
-  font-size: min(1.6rem, 24px);
+  font-size: 16px;
   text-transform: uppercase;
   padding: 12px;
   border: 1px solid #e7e7e7;
@@ -120,7 +120,7 @@
 
   @media (min-width: $tablet) {
     min-width: 376px;
-    font-size: min(2rem, 26px);
+    font-size: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -131,24 +131,24 @@
 
 .subscribe__button {
   //max-width: 280px;
-  padding: clamp(12px, 1.2rem, 18px);
-  width: clamp(490px, 8rem, 132px);
-  height: clamp(72px, 8.2rem, 72px);
-  font-size: min(1.6rem, 20px);
-  line-height: min(1.6rem, 20px);
+  padding: 12px;
+  width: 280px;
+  height: 56px;
+  font-size: 20px;
+  line-height: 26px;
   border: none;
 
   @media (min-width: $tablet) {
-    width: clamp(256px, 8rem, 132px);
-    height: clamp(56px, 8.2rem, 56px);
-    font-size: min(1.6rem, 20px);
-    line-height: min(1.6rem, 20px);
+    width: 280px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop) {
-    width: clamp(256px, 8rem, 132px);
-    height: clamp(56px, 8.2rem, 56px);
-    font-size: min(1.6rem, 20px);
-    line-height: min(1.6rem, 20px);
+    width: 256px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }

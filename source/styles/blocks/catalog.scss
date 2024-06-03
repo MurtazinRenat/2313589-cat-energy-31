@@ -1,22 +1,22 @@
 .catalog {
-  padding-top: min(2.7rem, 35px);
+  padding-top: 27px;
 
   @media (min-width: $tablet) {
-    padding-top: min(6.3rem, 63px);
+    padding-top: 63px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: clamp(60px, 7.4rem, 74px);
+    padding-top: 74px;
   }
 }
 
 .catalog__wrapper {
   @media (min-width: $tablet) {
-    margin-bottom: min(7rem, 70px);
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: clamp(66px, 7.6rem, 76px);
+    margin-bottom: 76px;
   }
 }
 
@@ -25,10 +25,10 @@
   margin-bottom: 41px;
 
   @media (min-width: $tablet) {
-    margin-bottom: min(16.6rem, 1656px);
+    margin-bottom: 166px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: clamp(150px, 16.5rem, 165px);
+    margin-bottom: 165px;
   }
 }

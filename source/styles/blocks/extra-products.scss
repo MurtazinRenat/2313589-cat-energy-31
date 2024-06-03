@@ -1,21 +1,21 @@
 .extra-products {
-  padding: min(2.4rem, 40px) 0 min(3.5rem, 55px);
+  padding: 24px 0 35px;
 
   @media (min-width: $tablet) {
     padding: 0;
-    padding-bottom: min(7.4rem, 74px);
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: clamp(76px, 8.6rem, 86px);
+    padding-bottom: 86px;
   }
 }
 
 .extra-products__wrapper {
   @media (min-width: $desktop) {
     display: grid;
-    grid-template-columns: min(89.5rem, 1688px) auto;
-    gap: 30px clamp(60px, 8rem, 80px);
+    grid-template-columns: 895px auto;
+    gap: 30px 80px;
     grid-auto-flow: dense;
   }
 }
@@ -24,34 +24,34 @@
   margin: 0;
   max-width: fit-content;
   margin-left: -20px;
-  margin-bottom: min(3.6rem, 40px);
+  margin-bottom: 36px;
   padding: 0 20px;
-  font-size: min(2.4rem, 28px);
-  line-height: min(2.4rem, 28px);
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 400;
   background-color: #ffffff;
 
   @media (min-width: $tablet) {
     margin-left: 0;
-    margin-bottom: min(7.9rem, 79px);
+    margin-bottom: 79px;
     padding: 0 40px;
-    font-size: clamp(32px, 3.6rem, 40px);
-    line-height: clamp(32px, 3.6rem, 40px);
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop) {
     margin-left: -40px;
     margin-bottom: clamp(70px, 7.9rem, 79px);
-    font-size: clamp(32px, 3.6rem, 40px);
-    line-height: clamp(32px, 3.6rem, 40px);
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .extra-products__list {
-  margin-bottom: min(3.6rem, 40px);
+  margin-bottom: 36px;
 
   @media (min-width: $tablet) {
-    margin-bottom: min(7rem, 70px);
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop) {

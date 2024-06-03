@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  padding: min(2rem, 30px) 0 min(2.5rem, 38px);
+  padding: 20px 0 25px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -20,36 +20,37 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 0 min(3.7rem, 45px) min(4rem, 55px);
+    padding: 0 37px 40px;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, min-content) 1fr;
     background-color: $color-secondary;
   }
 
   @media (min-width: $desktop) {
-    padding: 0 clamp(30px, 3.8rem, 46px) clamp(40px, 4rem, 54px);
+    width: 245px;
+    padding: 0 38px 40px;
   }
 }
 
 .card__image-link {
-  width: min(14rem, 182px);
-  height: min(10.7rem, 130px);
+  width: 140px;
+  height: 107px;
   grid-column: 1 / 2;
   grid-row: span 2;
   justify-self: center;
 
   @media (min-width: $tablet) {
-    width: min(20rem, 245px);
-    height: min(21rem, 252px);
+    width: 200px;
+    height: 210px;
     margin: 0 auto;
     margin-top: -71px;
-    margin-bottom: min(2.2rem, 22px);
+    margin-bottom: 22px;
     grid-column: 1 / -1;
   }
 
   @media (min-width: $desktop) {
-    width: min(16.9rem, 200px);
-    height: min(21rem, 252px);
+    width: 169px;
+    height: 210px;
     margin-top: -72px;
     margin-bottom: 13px;
   }
@@ -57,7 +58,7 @@
 
 .card__image {
   display: block;
-  width: 100%;
+  //width: 100%;
   height: auto;
   object-fit: contain;
 
@@ -70,41 +71,41 @@
   text-decoration: none;
   color: #222222;
   grid-column: 2 / -1;
-  max-width: 7.6rem;
+  max-width: 76px;
   margin-bottom: 11px;
   padding-top: 3px;
 
   @media (min-width: $tablet) {
     display: block;
-    max-width: clamp(135px, 13.5rem, 200px);
+    max-width: 135px;
     margin: 0 auto;
-    margin-bottom: min(2rem, 30px);
+    margin-bottom: 20px;
     padding: 0;
     grid-column: 1 / -1;
   }
 
   @media (min-width: $desktop) {
-    max-width: clamp(140px, 14rem, 172px);
-    margin-bottom: clamp(20px, 2.3rem, 30px);
+    max-width: 140px;
+    margin-bottom: 23px;
   }
 }
 
 .card__caption {
   margin: 0;
-  font-size: min(1.6rem, 20px);
-  line-height: min(2rem, 25px);
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    font-size: clamp(18px, 2rem, 24px);
-    line-height: clamp(22px, 2.4rem, 29px);
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
   }
 
   @media (min-width: $desktop) {
-    font-size: clamp(20px, 2rem, 27px);
-    line-height: clamp(24px, 2.4rem, 33px);
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -115,11 +116,11 @@
   @media (min-width: $tablet) {
     grid-column: 1 / -1;
     display: grid;
-    row-gap: max(0.5rem, 5px);
+    row-gap: 5px;
   }
 
   @media (min-width: $desktop) {
-    row-gap: max(0.7rem, 7px);
+    row-gap: 7px;
   }
 }
 
@@ -127,21 +128,21 @@
   display: flex;
   justify-content: space-between;
   font-family: $font-secondary;
-  font-size: min(1.2rem, 17px);
-  line-height: min(1.6rem, 23px);
+  font-size: 12px;
+  line-height: 16px;
   color: $text-secondary;
 
   @media (min-width: $tablet) {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: max(6px, 0.6rem);
-    font-size: clamp(14px, 1.6rem, 19px);
-    line-height: clamp(18px, 2rem, 24px);
+    padding-bottom: 6px;
+    font-size: 16px;
+    line-height: 20px;
     gap: 6px;
   }
 
   @media (min-width: $desktop) {
-    font-size: clamp(16px, 1.6rem, 19px);
-    line-height: clamp(20px, 2rem, 24px);
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

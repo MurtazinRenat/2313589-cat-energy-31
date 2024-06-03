@@ -1,27 +1,28 @@
 .programs__wrapper {
   @media (min-width: $tablet) {
-    margin-bottom: clamp(40px, 4.5rem, 55px);
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: clamp(68px, 7.2rem, 80px);
+    margin-bottom: 72px;
+    width: 1220px;
   }
 }
 
 .programs__list {
   @include list-reset;
   display: grid;
-  gap: min(2rem, 30px);
-  padding: min(2rem, 30px) 0;
+  gap: 20px;
+  padding: 20px 0;
 
   @media (min-width: $tablet) {
     padding: 0;
-    gap: clamp(25px, 3rem, 40px);
+    gap: 30px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(2, 1fr);
-    gap: clamp(70px, 8rem, 90px);
+    gap: 80px;
   }
 }
 

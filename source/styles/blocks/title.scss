@@ -1,22 +1,22 @@
 .title {
-  font-size: min(3.6rem, 45px);
+  font-size: 36px;
   font-weight: 400;
 
   &--primary {
-    line-height: min(3.6rem, 45px);
+    line-height: 36px;
   }
 
   &--secondary {
-    line-height: min(4rem, 50px);
+    line-height: 40px;
   }
 
   @media (min-width: $tablet) {
-    font-size: min(6rem, 70px);
-    line-height: min(6rem, 70px);
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop) {
-    font-size: clamp(45px, 6rem, 70px);
-    line-height: clamp(45px, 6rem, 70px);
+    font-size: 60px;
+    line-height: 60px;
   }
 }

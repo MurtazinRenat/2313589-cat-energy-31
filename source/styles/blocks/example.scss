@@ -1,10 +1,10 @@
 .example {
   background-color: #eaeaea;
   position: relative;
-  padding: min(2.5rem, 40px) 0 min(4rem, 56px);
+  padding: 25px 0 40px;
 
   @media (min-width: $tablet) {
-    padding: min(4.5rem, 45px) 0 min(10.1rem, 101px);
+    padding: 45px 0 101px;
     background-image: linear-gradient(#ffffff calc(100% - 462px), #eaeaea calc(100% - 462px));
   }
 
@@ -19,6 +19,7 @@
   @media (min-width: $desktop) {
     display: grid;
     grid-auto-flow: dense;
+    width: 1220px;
   }
 }
 
@@ -27,54 +28,54 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet) {
-    margin-bottom: min(6rem, 60px);
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
-    margin-bottom: clamp(104px, 14.6rem, 146px);
+    margin-bottom: 146px;
   }
 }
 
 .example__text {
   margin: 0;
-  margin-bottom: min(2rem, 36px);
+  margin-bottom: 20px;
   font-family: $font-secondary;
   color: $text-secondary;
-  font-size: min(1.4rem, 18px);
-  line-height: min(1.8rem, 23px);
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet) {
-    margin-bottom: min(5.5rem, 55px);
-    font-size: clamp(16px, 1.6rem, 20px);
-    line-height: clamp(24px, 2.4rem, 30px);
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop) {
     grid-column: 1 / 2;
-    max-width: clamp(433px, 43.3rem, 660px);
-    margin-bottom: clamp(58px, 6.9rem, 69px);
+    max-width: 433px;
+    margin-bottom: 69px;
   }
 }
 
 .example__list {
   margin: 0;
-  margin-bottom: min(2rem, 40px);
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: min(3.4rem, 45px) min(3.2rem);
+  gap: 34px 32px;
 
-  @media (min-width: $tablet) and (max-width: 1023px) {
-    grid-template-columns: repeat(2, clamp(155px, 16.2rem, 235px)) 1fr;
-    gap: max(43px, 4.3rem);
-    margin-bottom: min(10.2rem, 104px);
+  @media (min-width: $tablet) {
+    grid-template-columns: 162px 1fr;
+    gap: 43px;
+    margin-bottom: 102px;
   }
 
   @media (min-width: $desktop) {
     margin-bottom: 0;
-    grid-column: 1 / 2;
-    gap: clamp(50px, 6rem, 80px) clamp(40px, 4.2rem, 80px);
-    max-width: clamp(366px, 36.6rem, 645px);
+    grid-column: 2 / 1;
+    gap: 60px 42px;
+    max-width: 366px;
   }
 }
 
@@ -82,13 +83,13 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  padding: min(1.4rem, 22px) min(1rem, 16px) min(0.7rem, 11px);
+  padding: 14px 10px 7px;
   text-align: center;
-  border: min(0.1rem) solid #cdcdcd;
+  border: 1px solid #cdcdcd;
   border-radius: 5px;
 
   @media (min-width: $tablet) {
-    padding-bottom: clamp(9px, 0.9rem, 14px);
+    padding-bottom: 9px;
   }
 
   &--line {
@@ -97,19 +98,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 0.3rem;
+    gap: 3px;
     border: none;
 
-    @media (min-width: $tablet) and (max-width: 1023px) {
+    @media (min-width: $tablet) {
       grid-column: 3 / -1;
       flex-direction: column;
       align-items: end;
-      gap: max(1rem, 10px);
+      gap: 10px;
       text-align: right;
     }
 
     @media (min-width: $desktop) {
-      gap: min(6.6rem, 66px);
+      grid-column: 1 / -1;
+      flex-direction: row;
+      gap: 66px;
       justify-content: start;
     }
   }
@@ -117,40 +120,40 @@
 
 .example__amount {
   margin: 0;
-  font-size: min(2.4rem, 27px);
-  line-height: min(2.4rem, 27px);
+  font-size: 24px;
+  line-height: 24px;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
-    font-size: clamp(28px, 3rem, 40px);
-    line-height: clamp(35px, 3.7rem, 48px);
+    font-size: 30px;
+    line-height: 37px;
   }
 
   @media (min-width: $desktop) {
-    font-size: clamp(28px, 3rem, 40px);
-    line-height: clamp(35px, 3.7rem, 48px);
+    font-size: 30px;
+    line-height: 37px;
   }
 }
 
 .example__description {
-  max-width: 7.7rem;
-  margin-top: 0.7rem;
-  margin-bottom: max(-2.2rem, -30px);
-  padding: 0 0.5rem;
+  max-width: 77px;
+  margin-top: 7px;
+  margin-bottom: -22px;
+  padding: 0 5px;
   font-family: $font-secondary;
-  font-size: min(1.2rem, 16px);
-  line-height: min(1.2rem, 16px);
+  font-size: 12px;
+  line-height: 12px;
   text-transform: lowercase;
   color: $text-secondary;
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
-    max-width: max(200px, 20rem);
-    margin-top: max(11px, 1.1rem);
-    margin-bottom: clamp(-21px, -1.5rem, -15px);
-    padding: 0 max(7px, 0.7rem);
-    font-size: clamp(14px, 1.4rem, 18px);
-    line-height: clamp(14px, 1.4rem, 18px);
+    max-width: 200px;
+    margin-top: 11px;
+    margin-bottom: -15px;
+    padding: 0 7px;
+    font-size: 14px;
+    line-height: 14px;
     background-color: #ffffff;
 
     br {
@@ -165,43 +168,43 @@
 
 .example__item--line .example__amount,
 .example__item--line .example__description {
-  max-width: 12.2rem;
+  max-width: 122px;
   margin: 0;
   padding: 0;
   font-family: $font-primary;
-  font-size: min(1.4rem, 20px);
-  line-height: clamp(20px, 2rem, 28px);
+  font-size: 14px;
+  line-height: 20px;
   color: $text-primary;
   text-transform: uppercase;
   transform: none;
 
   @media (min-width: $tablet) {
-    max-width: max(20rem, 200px);
-    font-size: clamp(19px, 2rem, 26px);
+    max-width: 200px;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop) {
-    font-size: clamp(20px, 2rem, 26px);
+    font-size: 20px;
   }
 }
 
 .example__slider {
   @media (max-width: $mobile) {
     margin: 0 auto;
-    width: 28rem;
-    height: 25.6rem;
+    width: 280px;
+    height: 256px;
   }
 
   @media (min-width: $tablet) {
     margin: 0 auto;
-    width: clamp(560px, 56rem, 630px);
-    height: min(51.2rem, 570px);
+    width: 560px;
+    height: 512px;
   }
 
   @media (min-width: $desktop) {
     margin: 0;
-    width: clamp(560px, 56rem, 800px);
-    height: clamp(512px, 51.2rem, 726px);
+    width: 560px;
+    height: 512px;
     grid-column: 2 / 3;
     grid-row: span 4;
     place-self: start end;

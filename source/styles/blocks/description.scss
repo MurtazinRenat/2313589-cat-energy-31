@@ -1,48 +1,47 @@
 .description {
-  @media (min-width: $tablet) and (max-width: 1023px) {
+  @media (min-width: $tablet) {
     border-bottom: 1px solid #e6e6e6;
   }
 }
 
 .description__wrapper {
-  margin-bottom: min(4.9rem, 60px);
+  margin-bottom: 49px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
-    padding-bottom: min(4.7rem, 60px);
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: clamp(50px, 7rem, 70px);
+    margin-bottom: 70px;
     padding-bottom: 0;
+    width: 1220px;
   }
 }
 
 .description__title {
   margin: 0;
-  margin-bottom: min(4rem, 50px);
+  margin-bottom: 40px;
 
   @media (min-width: $tablet) {
-    margin-bottom: min(3.2rem, 40px);
+    margin-bottom: 32px;
   }
 }
 
 .description__list {
   @include list-reset;
   display: grid;
-  gap: min(2rem, 40px);
+  gap: 20px;
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 3.7rem 5.8rem;
-  }
-
-  @media (min-width: 1080px) {
-    grid-template-columns: repeat(4, 1fr);
+    gap: 37px 58px;
   }
 
   @media (min-width: $desktop) {
-    column-gap: clamp(76px, 8.1rem, 81px);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 81px;
+    padding-top: 40px;
   }
 }
 
@@ -51,20 +50,20 @@
   counter-increment: enumerator 1;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: min(2rem, 30px);
+  gap: 20px;
 
   &::before {
     content: "";
     position: absolute;
     background-color: $color-primary;
-    width: min(6rem, 75px);
-    height: min(6rem, 75px);
+    width: 60px;
+    height: 60px;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: $tablet) {
-      width: clamp(80px, 8rem, 100px);
-      height: clamp(80px, 8rem, 100px);
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -91,8 +90,8 @@
   @media (min-width: $tablet) {
     grid-template-columns: auto;
     gap: 31px;
-    max-width: clamp(250px, 25rem, 360px);
-    padding: clamp(40px, 4rem, 56px) 0 clamp(57px, 5.7rem, 80px);
+    max-width: 250px;
+    padding: 40px 0 57px;
     counter-increment: number 1;
   }
 
@@ -100,60 +99,40 @@
     @media (min-width: $tablet) {
       position: absolute;
       display: block;
-      width: clamp(134px, 13.4rem, 162px);
+      width: 134px;
       top: -40;
       right: 0;
       z-index: -1;
       content: counter(number);
-      font-size: clamp(260px, 28rem, 340px);
-      line-height: clamp(260px, 28rem, 340px);
+      font-size: 280px;
+      line-height: 280px;
       color: $color-secondary;
     }
 
     @media (min-width: $desktop) {
-      font-size: clamp(270px, 28rem, 340px);
-      line-height: clamp(270px, 28rem, 340px);
+      font-size: 280px;
+      line-height: 280px;
     }
   }
 }
 
 .description__text {
   margin: 0;
-  padding-top: 0.2rem;
-  padding-left: 7rem;
+  padding-top: 2px;
+  padding-left: 70px;
   font-family: $font-secondary;
   color: $text-secondary;
-  font-size: min(1.4rem, 20px);
-  line-height: min(1.8rem, 25px);
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet) {
-    padding-top: 8rem;
-    font-size: clamp(16px, 1.6rem, 20px);
-    line-height: clamp(24px, 2.4rem, 30px);
+    padding-top: 80px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 
-  /* &::before {
-    content: "";
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-size: contain;
+  @media (min-width: $desktop) {
+    padding-top: 73px;
   }
-
-  &--healthy::before {
-    background-image: url("../../icons/index/healthy-icon.svg");
-  }
-
-  &--simple::before {
-    background-image: url("../../icons/index/simple-icon.svg");
-  }
-
-  &--tasty::before {
-    background-image: url("../../icons/index/tasty-icon.svg");
-  }
-
-  &--fast::before {
-    background-image: url("../../icons/index/fast-icon.svg");
-  } */
 }
