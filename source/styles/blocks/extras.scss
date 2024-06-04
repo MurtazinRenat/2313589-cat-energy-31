@@ -1,10 +1,14 @@
 .extras {
   @include list-reset;
-  padding: 0;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 70px;
+  }
 }
 
 .extras__item {
-  padding: 13px 0 18px;
+  padding: 13px 0 19px;
   border-top: 1px solid #cdcdcd;
   display: grid;
 
@@ -15,12 +19,16 @@
   @media (min-width: $tablet) {
     padding: 26px 38px 28px;
     grid-template-columns: repeat(2, 1fr);
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop) {
     align-items: center;
     padding: 14px 0 17px;
     grid-template-columns: 325px 326px auto;
+    border-left: none;
+    border-right: none;
   }
 }
 

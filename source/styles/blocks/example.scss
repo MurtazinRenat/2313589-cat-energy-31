@@ -5,13 +5,13 @@
 
   @media (min-width: $tablet) {
     padding: 45px 0 101px;
-    background-image: linear-gradient(#ffffff calc(100% - 462px), #eaeaea calc(100% - 462px));
+    background-image: linear-gradient(to top, #eaeaea 461px, #ffffff 461px);
   }
 
   @media (min-width: $desktop) {
     padding: 0;
     padding-bottom: 75px;
-    background-image: linear-gradient(#ffffff min(calc(100% - 462px), 23%), $color-secondary min(calc(100% - 462px), 23%));
+    background-image: linear-gradient(to bottom, #ffffff 136px, $color-secondary 136px);
   }
 }
 
@@ -90,6 +90,11 @@
 
   @media (min-width: $tablet) {
     padding-bottom: 9px;
+    width: 162px;
+
+    &--line {
+      width: 174px;
+    }
   }
 
   &--line {
@@ -114,6 +119,7 @@
       flex-direction: row;
       gap: 66px;
       justify-content: start;
+      width: 327px;
     }
   }
 }

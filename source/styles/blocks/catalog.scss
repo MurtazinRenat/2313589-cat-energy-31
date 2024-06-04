@@ -2,7 +2,7 @@
   padding-top: 27px;
 
   @media (min-width: $tablet) {
-    padding-top: 63px;
+    padding-top: 65px;
   }
 
   @media (min-width: $desktop) {
@@ -12,11 +12,12 @@
 
 .catalog__wrapper {
   @media (min-width: $tablet) {
-    margin-bottom: 70px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 76px;
+    margin-bottom: 69px;
+    padding: 0 70px;
   }
 }
 
@@ -29,6 +30,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 165px;
+    margin-bottom: 167px;
   }
 }

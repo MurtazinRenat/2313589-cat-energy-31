@@ -1,13 +1,13 @@
 .extra-products {
-  padding: 24px 0 35px;
+  padding: 24px 0 15px;
 
   @media (min-width: $tablet) {
     padding: 0;
-    padding-bottom: 74px;
+    padding-bottom: 79px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 86px;
+    padding: 0 70px 25px;
   }
 }
 
@@ -25,7 +25,7 @@
   max-width: fit-content;
   margin-left: -20px;
   margin-bottom: 36px;
-  padding: 0 20px;
+  padding: 0 40px 0 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -35,15 +35,15 @@
     margin-left: 0;
     margin-bottom: 79px;
     padding: 0 40px;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 32px;
   }
 
   @media (min-width: $desktop) {
     margin-left: -40px;
-    margin-bottom: clamp(70px, 7.9rem, 79px);
-    font-size: 36px;
-    line-height: 36px;
+    margin-bottom: 80px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 

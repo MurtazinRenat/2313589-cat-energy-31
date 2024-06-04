@@ -3,13 +3,18 @@
   margin: 0 auto;
   max-width: 32px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   gap: 24px;
-  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding-top: 2px;
+    padding-left: 37px;
+    gap: 24px;
+  }
 
   @media (min-width: $desktop) {
-    padding-left: 100px;
-    max-width: 362px;
+    padding-left: 33px;
   }
 }
 
@@ -17,7 +22,7 @@
   width: 28px;
   height: 22px;
   background-color: $color-social;
-  position: absolute;
+  display: flex;
 
   &--vk {
     mask-image: url("../../icons/stack.svg#social_vkontakte");

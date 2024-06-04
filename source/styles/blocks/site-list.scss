@@ -8,17 +8,6 @@
     display: none;
   }
 
-  /* //как лучше реализовать?
-&--closed {
-    background-image: url("../../icons/stack.svg#mobile_close-button-mobile");
-    background-size: min(1.8rem, 30px) min(1.8rem, 30px);
-    background-position: center;
-  } */
-
-  /* @media (min-width: $tablet) {
-    display: none;
-  } */
-
   @media (max-width: $mobile) {
     background-color: #ffffff;
   }
@@ -79,7 +68,7 @@
 
 .site-list__link {
   display: block;
-  padding: 28px 28px 30px;
+  padding: 23px 27px 22px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
