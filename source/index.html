@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <div class="page__background-wrapper">
-    <header class="page__header page__header--background">
+    <header class="page__header page__header--background" data-test="header">
       <nav class="navigation container">
         <div class="navigation__wrapper">
           <a class="header-logo" href="#">
@@ -45,7 +45,7 @@
       </nav>
     </header>
     <main class="page__content page__content--background">
-      <section class="page__hero hero">
+      <section class="page__hero hero" data-test="hero">
         <div class="hero__wrapper container">
           <h1 class="hero__title title title--primary">Функциональное питание&nbsp;для&nbsp;котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
@@ -62,7 +62,7 @@
           <a class="hero__button button button--primary" href="form.html">Подобрать программу</a>
         </div>
       </section>
-      <section class="programs">
+      <section class="programs" data-test="programs">
         <div class="programs__wrapper container">
           <h2 class="visually-hidden">Каталог программ Кэт энерджи</h2>
           <ul class="programs__list">
@@ -83,7 +83,7 @@
           </ul>
         </div>
       </section>
-      <section class="description">
+      <section class="description" data-test="features">
         <div class="description__wrapper container">
           <h2 class="description__title title title--secondary">Как это работает</h2>
           <ol class="description__list">
@@ -102,7 +102,7 @@
           </ol>
         </div>
       </section>
-      <section class="example">
+      <section class="example" data-test="proof">
         <div class="example__wrapper container">
           <h2 class="example__title title title--secondary">Живой пример</h2>
           <p class="example__text">Борис сбросил 5&nbsp;кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -146,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section class="invite">
+      <section class="invite" data-test="contacts">
         <div class="container">
           <div class="invite__wrapper">
             <h2 class="visually-hidden">Адрес магазина.</h2>
@@ -172,7 +172,7 @@
       </section>
     </main>
   </div>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo footer-logo" href="#" aria-label="Логотип Кэт Энерджи.">
         <svg class="footer-logo__text" width="128" height="24" aria-hidden="true">

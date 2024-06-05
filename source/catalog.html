@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header">
+  <header class="page__header" data-test="header">
     <nav class="navigation container">
       <div class="navigation__wrapper navigation__wrapper--decor">
         <a class="header-logo" href="index.html">
@@ -44,7 +44,7 @@
     </nav>
   </header>
   <main class="page__content">
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <div class="catalog__wrapper container">
         <h1 class="catalog__title title title--primary">Каталог продукции</h1>
         <ul class="cards">
@@ -266,7 +266,7 @@
         </ul>
       </div>
     </section>
-    <section class="extra-products">
+    <section class="extra-products" data-test="additional">
       <div class="container">
         <div class="title-line title-line--short">
           <h2 class="extra-products__title">Дополнительные товары</h2>
@@ -335,7 +335,7 @@
         </div>
       </div>
     </section>
-    <section class="invite invite--secondary">
+    <section class="invite invite--secondary" data-test="contacts">
       <div class="container">
         <div class="invite__wrapper">
           <h2 class="visually-hidden">Адрес магазина.</h2>
@@ -360,7 +360,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__wrapper container">
       <a class="footer__logo footer-logo" href="index.html" aria-label="Логотип Кэт Энерджи.">
         <svg class="footer-logo__text" width="128" height="24" aria-hidden="true">
