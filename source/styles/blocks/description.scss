@@ -31,10 +31,6 @@
   @media (min-width: $tablet) {
     margin-bottom: 32px;
   }
-
-  // @media (min-width: $tablet) {
-  //   margin-bottom: 32px;
-  // }
 }
 
 .description__list {
@@ -42,6 +38,10 @@
   display: grid;
   gap: 23px;
   padding-bottom: 5px;
+
+  @media (min-width: 373px) {
+    gap: 53px;
+  }
 
   @media (min-width: $tablet) {
     grid-template-columns: repeat(2, 1fr);
@@ -60,7 +60,6 @@
   counter-increment: enumerator 1;
   display: grid;
   grid-template-columns: auto 1fr;
-  //gap: 20px;
 
   &::before {
     content: "";

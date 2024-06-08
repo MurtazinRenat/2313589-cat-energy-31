@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet) {
     padding: 0;
-    padding-bottom: 80px;
+    padding-bottom: 78px; //78 попадает в catalog
   }
 
   @media (min-width: $desktop) {
@@ -39,6 +39,15 @@
   }
 }
 
+.subscribe__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+
+  @media (min-width: $tablet) {
+    align-items: center;
+  }
+}
+
 .subscribe__description {
   margin: 0;
   margin-bottom: 24px;
@@ -50,14 +59,16 @@
   @media (min-width: $tablet) {
     margin: 0;
     width: 632px;
-    padding-left: 76px;
+    //padding-left: 76px;
     font-size: 24px;
     line-height: 32px;
+
+    justify-content: center;
   }
 
   @media (min-width: $desktop) {
     width: 950px;
-    padding-left: 270px;
+    padding-right: 70px;
     font-size: 24px;
     line-height: 32px;
   }
@@ -72,8 +83,7 @@
 
   @media (min-width: $tablet) {
     width: 632px;
-    padding-top: 25px;
-    padding-left: 75px;
+    padding-top: 23px;
     display: flex;
     flex-direction: row;
     gap: 0;
@@ -83,7 +93,7 @@
 
   @media (min-width: $desktop) {
     max-width: 752px;
-    padding-left: 590px;
+    padding-right: 70px;
   }
 }
 
