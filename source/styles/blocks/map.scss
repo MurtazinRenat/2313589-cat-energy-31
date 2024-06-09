@@ -1,12 +1,10 @@
 .map {
-  //z-index: 1;
-
   &::before {
     content: "";
     position: absolute;
     width: 57px;
     height: 53px;
-    top: 251px;
+    top: 139px;
     right: 129px;
     background-image: url("../../images/map/mobile-map-pin.svg");
     background-repeat: no-repeat;
@@ -16,7 +14,7 @@
     @media (min-width: $tablet) {
       width: 113px;
       height: 106px;
-      top: 348px;
+      top: 146px;
       right: 322px;
       background-repeat: no-repeat;
       background-position: center;
@@ -37,7 +35,6 @@
   border: none;
   position: relative;
   z-index: -1;
-  display: none;
 
   @media (min-width: $tablet) {
     height: 400px;

@@ -30,5 +30,5 @@ window.addEventListener('resize', () => {
 const wrapper = document.querySelector('.invite__map');
 const image = document.querySelector('.invite__map-image');
 
+image.classList.remove('invite__map-image--nojs');
 wrapper.classList.remove('invite__map--nojs');
-image.classList.add('invite__map-image--nojs');

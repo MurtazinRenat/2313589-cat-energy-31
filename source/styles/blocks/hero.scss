@@ -32,9 +32,8 @@
         url("../../images/index/hero-cat-desktop@1x.jpg") 1x),
       linear-gradient(90deg, #ffffff 50%, #63a63d 70%);
     background-repeat: no-repeat;
-    background-position: bottom right, 100%;
-    background-size: 50% 100%;
-    background-attachment: fixed;
+    background-position: 100% 0%, 100%;
+    background-size: 50%, 100%;
   }
 }
 
